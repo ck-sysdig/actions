@@ -23,7 +23,7 @@ jobs:
       uses: docker/build-push-action@v3
       with:
         context: ${{ env.DOCKERFILE_CONTEXT }}
-        tags: docker.io/${{ secrets.REGISTRY_USER }}/blurb:1.0
+        tags: "docker.io/trial2475/blurb:1.0"
         load: true
     
     - name: Setup cache
